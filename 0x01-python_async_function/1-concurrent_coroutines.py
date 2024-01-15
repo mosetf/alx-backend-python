@@ -2,9 +2,10 @@
 """[execute multiple coroutines at the same time with async]"""
 
 import asyncio
+from typing import List
 
 
-async def wait_n(n: int, max_delay: int) -> list[float]:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """[execute multiple coroutines at the same time with async]
     Args:
         n (int): [number of times wait_random will be called]
