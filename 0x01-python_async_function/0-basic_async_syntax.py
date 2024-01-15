@@ -4,7 +4,7 @@ import asyncio
 import random
 
 
-def wait_random(max_delay = 10):
+async def wait_random(max_delay = 10):
     """Coroutine that waits for a random delay between 0 and max_delay
     Args:
         max_delay (int, optional): [maximun value of delay]. Defaults to 10.
