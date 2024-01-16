@@ -2,6 +2,7 @@
 """
 Run time for four parallel comprehensions
 """
+async_comprehension = __import__('1-async_comprehension').async_comprehension
 import asyncio
 import time
 
@@ -13,8 +14,6 @@ async def measure_runtime() -> float:
     Returns:
         The runtime of the async_comprehension function in seconds.
     """
-    async_comprehension = __import__('1-async_comprehension').async_comprehension
-
     n = time.perf_counter()
     comprehensions = [async_comprehension() for _ in range(4)]
 
