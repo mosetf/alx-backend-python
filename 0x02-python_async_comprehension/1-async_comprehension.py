@@ -2,11 +2,11 @@
 """
 Asynchronously generates a sequence of floats using an async generator.
 """
-from typing import Generator
+from typing import List
 import asyncio
 
 
-async def async_comprehension() -> Generator[float, None, None]:
+async def async_comprehension() -> List[float]:
     """
     Asynchronously generates a sequence of floats using an async generator.
 
