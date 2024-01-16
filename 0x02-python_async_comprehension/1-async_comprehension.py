@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" 
+"""
 Asynchronously generates a sequence of floats using an async generator.
 """
 from typing import Generator
